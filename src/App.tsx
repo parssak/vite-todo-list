@@ -1,12 +1,13 @@
+import { useState } from "react";
+import { TodoList } from "./components/TodoList";
 import "./index.css";
 
-function App() {
+const App = () => {
   return (
-    <div className='container mx-auto py-6'>
-      <h1 className="font-bold text-3xl">Starter Template</h1>
-      <p>Vite, React, TypeScript, TailwindCSS 3</p>
+    <div className="container mx-auto py-6 px-4">
+      <TodoList />
     </div>
   );
-}
+};
 
 export default App;
